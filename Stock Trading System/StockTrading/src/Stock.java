@@ -4,8 +4,8 @@ public interface Stock {
     int getVolume();
     String getExchangeName();
 
-    void calculateMarketValue();
-    void upDatePrice();
+    void calculateMarketValue() throws Exception;
+    void upDatePrice(double percentageChange);
     String getStockType();       
 }
   
